@@ -1,2 +1,6 @@
 # react-redux-shoppingcart-demo
-react-redux 演示代码
+Redux 演示项目
+
+## 项目启动命令
+- cnpm install
+- npm run dev
