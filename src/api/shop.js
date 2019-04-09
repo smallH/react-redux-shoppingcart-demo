@@ -1,4 +1,3 @@
-// http://www.helloui.net/data/products.json
 import _products from './products.json'
 import axios from 'axios';
 
@@ -23,7 +22,7 @@ const _get = ({
 };
 
 export const getNetProducts = () => {
-	const url = "/data/products.json"
+	const url = "api/data/products.json"; // http://www.helloui.net/api/data/products.json
 	const query = {}
 	return _get({
 		url,

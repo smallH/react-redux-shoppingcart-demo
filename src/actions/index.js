@@ -9,15 +9,15 @@ const receiveProducts = products => ({
 // 请求商品列表
 export const getAllProducts = () => dispatch => {
 	// 请求本地JSON数据
-	shop.getLocalProducts(products => {
-		dispatch(receiveProducts(products))
-	})
+	//	shop.getLocalProducts(products => {
+	//		dispatch(receiveProducts(products))
+	//	})
 	// 请求网络JSON数据
-	//	shop.getNetProducts().then((data) => {
-	//		dispatch(receiveProducts(data))
-	//	}).catch((e) => {
-	//		console.log("请求数据发生错误");
-	//	});
+	shop.getNetProducts().then((data) => {
+		dispatch(receiveProducts(data))
+	}).catch((e) => {
+		console.log("请求数据发生错误");
+	});
 }
 
 const addToCartUnsafe = productId => ({
